@@ -17,10 +17,6 @@ html {
     scroll-padding-top: 145px; /* matches nav height */
   }
 
-body{
-  background: url(images/portfolio.jpg) no-repeat center center/cover;
-}
-
  header {
   position: fixed;
   width: 100%;
@@ -31,7 +27,7 @@ body{
   align-items: center;
   justify-content: space-between;
   padding: 10px 10%;
-  background: #ffcb05;
+  background: #457f8c;
   transition: all .50s ease;
 
 }
@@ -49,7 +45,7 @@ body{
 .navlist a{
   margin: 0px 15px;
   padding: 5px 10px;
-  color: #00274c;
+  color: #bffaff;
   font-size: 17px;
   font-weight: 500;
   transition: all .50s ease;
@@ -134,7 +130,7 @@ body{
 }
 
 .navlist a:hover{
-  color: #fff;
+  color: #00c7fb;
 }
 
 .btn:hover{
@@ -144,7 +140,7 @@ body{
 }
 
 #menu-icon{
-  color: #00274c;
+  color: #00c7fb;
   font-size: 38px;
   cursor: pointer;
   display: none;
@@ -153,6 +149,8 @@ body{
 /* Hero Section */
 section{
   padding: 0 17%;
+  margin: 20px 0;
+  border-bottom: 3px solid #00c7fb;
 }
 
 .hero{
@@ -166,6 +164,8 @@ section{
   gap: 6rem;
   margin-top: 120px;
   flex-direction: column; 
+  background-color: #bffaff;
+  box-shadow: #00c7fb;
 } 
 
 .hero-text h1 {
@@ -189,10 +189,10 @@ section{
   padding: 12px 25px;
   font-size: 15px;
   font-weight: 600;
-  color: #ffcb05;
-  background: #00274c;
+  color: white;
+  background: #00c7fb;
   border-radius: 50px;
-  border: 2px solid  #00274c;
+  border: 2px solid  #800020;
   box-shadow: 0 4px 15px rgba(255, 0, 102, 0);
  /* transition: box-shadow  0.3s ease, transform 0.3s ease;  */
 }
@@ -206,11 +206,13 @@ a:focus,
  /* box-shadow: 0 10px 20px rgba(0, 0, 0); */
   transform: translateY(-3px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  color: #800020;
+  background-color: #00c7fb;
 }
 
 .btn2 {
-  border: 2px solid  #00274c;
-  color:   #00274c;
+  border: 2px solid  #800020;
+  color:   #800020;
   background: transparent;
   margin-left: 15px;
   transition: all .50s ease;
@@ -218,8 +220,8 @@ a:focus,
 }
 
 .btn2:hover {
-  background: #00274c; 
-  color: #ffcb05;
+  background: #00c7fb; 
+  color: #fff;
 }
 
 .hero-imgg img{ 
@@ -227,7 +229,7 @@ a:focus,
    width: 100%;
    border-radius: 50%;
    object-fit: cover;
-   border: 4px solid #00274c;
+   border: 4px solid #00c7fb;
    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
    margin-left: auto; 
    margin-right: auto;
@@ -236,11 +238,11 @@ a:focus,
 }
 
 span {
-  color: #00274c;
+  color: #800020;
 }
 
 h2{
-  color:  #333;
+  color:  #457f8c;
 }
 
 
@@ -257,7 +259,7 @@ h2{
 .icon i{
   margin: 0 10px;
   font-size: 24px;
-  color: #333;
+  color: #00c7fb;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -388,20 +390,20 @@ h2{
   text-align: center;
   padding: 2rem 1rem;
   flex-direction: column;
-  background-color: #ddd;
+  background-color: white;
 }
 
 .about-text {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #222;
+  color: #800020;
 }
 
 .about-page p {
   max-width: 600px;
   margin: 0 auto;
   font-size: 1rem;
-  color: #333;
+  color: #457f8c;
 }
 
 /* About Section */
@@ -416,7 +418,7 @@ h2{
 .my-story, .my-skills {
   flex: 1;
   min-width: 300px;
-  background-color:  #ffcb05;
+  background-color:  #bffaff;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -425,11 +427,12 @@ h2{
 .my-story h2, .my-skills h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #111;
+  color: #800020;
 }
 
 .my-story p {
   margin-bottom: 1rem;
+  color: #457f8c;
 }
 
 /* Skills */
@@ -437,26 +440,48 @@ h2{
   margin-bottom: 1.5rem;
 }
 
+.skill-1 {
+  margin-bottom: 1.5rem;
+}
+
+.skill-2 {
+  margin-bottom: 1.5rem;
+}
+
 .skill span {
   display: block;
   margin-bottom: 0.3rem;
   font-weight: 600;
-  color:#00274c;
+  color:#457f8c;
+}
+
+.skill-1 span {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color:#457f8c;
+}
+
+.skill-2 span {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color:#457f8c;
 }
 
 .bar {
-  background-color: #333;
+  background-color: lightgray;
   height: 20px;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .fill {
-  background-color: #fff;
+  background-color: #00274c;
   height: 100%;
   text-align: right;
   padding-right: 10px;
-  color: black;
+  color: #457f8c;
   font-size: 0.9rem;
   border-radius: 5px 0 0 5px;
   transition: width 1s ease-in-out;
@@ -479,11 +504,10 @@ h2{
 
 .what-i-do {
   padding: 4rem 2rem;
-  background-color: #ddd;
+  background-color: #00c7fb;
   text-align: center;
-  
+  border-radius: 30px;
 }
-
 
 .services {
   display: grid;
@@ -510,7 +534,7 @@ h2{
 }
 
 .service-box{
-  background-color:#ffcb05;
+  background-color:#bffaff;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
@@ -519,22 +543,24 @@ h2{
 
 .service-box:hover{
   transform: translateY(-5px);
+  box-shadow: 0 4px 10px #457f8c;
 }
 
 .service-box i{
   font-size: 2.5rem;
-  color:#00274c;
+  color:#00c7fb;
   margin-bottom: 1rem;
 }
 
 .service-box h3{
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #800020;
 }
 
 .service-box p{
   font-size: 1rem;
-  color: #333;
+  color: #457f8c;
 }
 
 .projects {
@@ -548,7 +574,7 @@ h2{
   margin: 0 auto 20px auto;
   font-size: 18px;
   padding-bottom: 25px;
-  color:#333;
+  color:#457f8c;
   /*text-align: center;
   max-width: 500px;
   margin-bottom: 40px;
@@ -560,7 +586,7 @@ h2{
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 2rem;
-  color: #222;
+  color: #800020;
 }
 
 .projects-container {
@@ -576,7 +602,7 @@ h2{
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-  background-color: #ddd;
+  background-color: #bffaff;
   padding: 2px;
 }
 
@@ -598,5 +624,207 @@ h2{
 .project-card h3 {
   padding: 15px;
   font-size: 20px;
-  color: #333;
+  color: #800020;
+}
+
+.get-in-touch {
+  text-align: center;
+  padding: 4rem 2rem; /* Using rem for better scalability, 4rem top/bottom, 2rem left/right */
+  max-width: 600px;
+  background-color: #457f8c;
+  border-radius: 30px;
+  width: 90%; /* Use 90% for better mobile fill, with max-width as a ceiling */
+  margin: 2rem auto; /* Add margin-top and -bottom to create space above and below the card */
+  /* Remove fixed height to prevent content overflow */
+  min-height: 200px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.get-in-touch h2 {
+  margin-bottom: 1.5rem; 
+  color: #bffaff;
+  /* Set a responsive font size */
+  font-size: 2rem; /* A good base size */
+  line-height: 1.2;
+}
+
+.get-in-touch p {
+  /* Use a margin with a flexible unit (rem) */
+  margin-bottom: 2rem;
+  color: #bffaff;
+  font-size: 1.1rem; /* A slightly larger, more readable font size */
+  line-height: 1.5;
+}
+
+.contact-btn {
+  /* Use flexible padding */
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #457f8c;
+  border: 2px solid #fff; /* A slightly thicker border for more presence */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem; /* Standard font size for readability */
+  /* Make sure the text is not underlined */
+  text-decoration: none;
+  /* for proper spacing */
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  /* Remove margin-top as the paragraph's margin-bottom provides spacing */
+  margin-top: 0;
+}
+
+/* Hover effect for the button */
+.contact-btn:hover {
+  background-color: #457f8c; /* Match the card's background */
+  color: #fff; 
+  border-color: #fff;
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Media queries for smaller screens to adjust spacing and font sizes */
+@media (max-width: 768px) {
+  .get-in-touch {
+    padding: 3rem 1.5rem; /* Reduce padding on tablets */
+  }
+
+  .get-in-touch h2 {
+    font-size: 1.5rem; /* Smaller heading */
+  }
+
+  .get-in-touch p {
+    font-size: 1rem; /* Smaller paragraph text */
+  }
+
+  .contact-btn {
+    padding: 0.8rem 1.5rem; /* Smaller button padding */
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .get-in-touch {
+    padding: 2rem 1rem; /* Further reduce padding on mobile */
+    width: 95%; /* Even wider to fill more space */
+  }
+
+  .get-in-touch h2 {
+    font-size: 1.25rem;
+  }
+
+  .get-in-touch p {
+    font-size: 0.9rem;
+  }
+
+  .contact-btn {
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+.site-footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 25px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
+}
+
+.footer-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-info h4{
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  flex: 1;
+  text-align: center;
+  min-width: 200px;
+}
+
+.footer-links h4 {
+  margin-bottom: 15px;
+  color: #00c7fb;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #00c7fb;
+}
+
+.footer-social {
+  flex: 1;
+  text-align: right;
+  min-width: 200px;
+}
+
+.footer-social h4 {
+  margin-bottom: 15px;
+  color: #00c7fb;
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin-left: 15px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00c7fb;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+.footer-info,
+.footer-links,
+.footer-social {
+    text-align: center;
+  }
+
+.social-icons a{
+  margin: 0 10px;
+}
 }

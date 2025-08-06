@@ -1,23 +1,44 @@
-# Responsive Portfolio Project
+# Candy Khumalo - Portfolio Website
 
-This project is a responsive front-end website layout featuring a modern navigation bar and an interactive hamburger menu for mobile devices. It was built using **HTML**, **CSS**, and **Vanilla JavaScript** to demonstrate UI/UX principles, responsive design, and DOM manipulation.
+A personal portfolio website to showcase my skills and projects as a Front-End Developer. Built with HTML, CSS, and JavaScript. The site is fully responsive and features sections for my bio, skills, and past work.
 
-## 🔍 Live Demo
+## About the Project
 
-[Click here to view the live demo](#) <!-- Replace # with your GitHub Pages or Netlify link -->
+This project is a personal portfolio website designed to present my work and professional experience. The site is built using standard web technologies:
 
-## ✨ Features
+- **HTML:** For the structure and content of the pages.
+- **CSS:** To style the website, including a **fully responsive design** for various screen sizes, from mobile to desktop.
+- **JavaScript:** (Based on the `script.js` file) For interactivity, such as a contact form validation or dynamic elements.
 
-- Responsive design for mobile, tablet, and desktop
-- Hamburger menu icon that toggles the navigation menu
-- Clean and minimalist user interface
-- Mobile-first approach
+## How to Use
 
-## 🛠️ Tech Stack
+To view and run this project locally, follow these simple steps:
 
-- HTML5
-- CSS3 (Flexbox, Media Queries)
-- JavaScript (ES6)
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
+    ```
+2.  **Navigate into the project directory:**
+    ```bash
+    cd your-repository-name
+    ```
+3.  **Open the `index.html` file:**
+    Simply open the `index.html` file in your preferred web browser.
 
-## 📂 Project Structure
+## Screenshots
 
+![Homepage of the Portfolio Website](images/color-pallette.jpg)
+*A visual of the home page showing the color palette and layout.*
+
+![Projects Section](images/project-section.jpg)
+*The projects section, showcasing a gallery of recent work.*
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+You can reach me at:
+- **Email:** candykhumalo2023@gmail.com
+- **LinkedIn:** [https://www.linkedin.com/in/candy-khumalo-7251552b6/]
