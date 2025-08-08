@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campaign Dashboard</title>
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Top Bar -->
+      <header class="topbar" role="banner">
+        <button id="sidebarToggle" class="btn btn--ghost topbar__menu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+        <div class="topbar__brand">
+          <div class="brand__logo" aria-hidden="true">⬢</div>
+          <span class="brand__name">AdPilot</span>
+        </div>
+        <div class="topbar__spacer"></div>
+        <div class="topbar__user" role="button" tabindex="0" aria-label="User profile">
+          <div class="avatar" aria-hidden="true">A</div>
+          <span class="username">Alex Morgan</span>
+        </div>
+      </header>
+
+      <!-- Layout: Sidebar + Main -->
+      <div class="layout">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar" aria-label="Sidebar Navigation">
+          <nav class="nav">
+            <a class="nav__link nav__link--active" href="#">Dashboard</a>
+            <a class="nav__link" href="#">Campaigns</a>
+            <a class="nav__link" href="#">Reports</a>
+            <a class="nav__link" href="#">Settings</a>
+          </nav>
+        </aside>
+
+        <!-- Mobile overlay -->
+        <div id="overlay" class="overlay" tabindex="-1" aria-hidden="true"></div>
+
+        <!-- Main Content -->
+        <main class="main" id="mainContent">
+          <!-- Cards: Campaign progress/metrics -->
+          <section class="section">
+            <h2 class="section__title">Overview</h2>
+            <div class="cards-grid">
+              <article class="card">
+                <div class="card__header">
+                  <h3 class="card__title">Active Campaigns</h3>
+                </div>
+                <div class="card__value">12</div>
+                <div class="progress"><div class="progress__bar" style="width: 75%"></div></div>
+                <div class="card__meta">75% on track</div>
+              </article>
+
+              <article class="card">
+                <div class="card__header">
+                  <h3 class="card__title">Total Spend</h3>
+                </div>
+                <div class="card__value">$124,830</div>
+                <div class="progress"><div class="progress__bar" style="width: 58%"></div></div>
+                <div class="card__meta">58% of monthly budget</div>
+              </article>
+
+              <article class="card">
+                <div class="card__header">
+                  <h3 class="card__title">Avg. CTR</h3>
+                </div>
+                <div class="card__value">2.9%</div>
+                <div class="progress"><div class="progress__bar" style="width: 29%"></div></div>
+                <div class="card__meta">Up 0.4% vs last week</div>
+              </article>
+
+              <article class="card">
+                <div class="card__header">
+                  <h3 class="card__title">Conversions</h3>
+                </div>
+                <div class="card__value">3,421</div>
+                <div class="progress"><div class="progress__bar" style="width: 66%"></div></div>
+                <div class="card__meta">66% to goal</div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Campaigns Table -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Campaigns</h2>
+              <div class="section__actions">
+                <div class="input-group">
+                  <input id="searchInput" type="text" class="input" placeholder="Search campaigns" aria-label="Search campaigns" />
+                </div>
+                <div class="input-group">
+                  <select id="statusFilter" class="input" aria-label="Filter by status">
+                    <option value="">All Statuses</option>
+                    <option value="Active">Active</option>
+                    <option value="Paused">Paused</option>
+                    <option value="Completed">Completed</option>
+                  </select>
+                </div>
+                <button id="addCampaignBtn" class="btn btn--primary">New Campaign</button>
+              </div>
+            </div>
+
+            <div class="table-wrapper">
+              <table id="campaignTable" class="table" aria-describedby="campaign table with sorting and filtering">
+                <thead>
+                  <tr>
+                    <th data-sort-key="name" scope="col" class="sortable">Name</th>
+                    <th data-sort-key="status" scope="col" class="sortable">Status</th>
+                    <th data-sort-key="budget" scope="col" class="sortable right">Budget</th>
+                    <th data-sort-key="spent" scope="col" class="sortable right">Spent</th>
+                    <th data-sort-key="progress" scope="col" class="sortable right">Progress</th>
+                    <th data-sort-key="start" scope="col" class="sortable">Start</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Example rows; JS can enhance sorting/filtering -->
+                  <tr>
+                    <td data-key="name">Spring Launch</td>
+                    <td data-key="status"><span class="badge badge--green">Active</span></td>
+                    <td data-key="budget" class="right" data-value="50000">$50,000</td>
+                    <td data-key="spent" class="right" data-value="31890">$31,890</td>
+                    <td data-key="progress" class="right" data-value="64">64%</td>
+                    <td data-key="start" data-value="2025-03-01">Mar 1, 2025</td>
+                  </tr>
+                  <tr>
+                    <td data-key="name">Holiday Promo</td>
+                    <td data-key="status"><span class="badge badge--gray">Paused</span></td>
+                    <td data-key="budget" class="right" data-value="80000">$80,000</td>
+                    <td data-key="spent" class="right" data-value="56000">$56,000</td>
+                    <td data-key="progress" class="right" data-value="70">70%</td>
+                    <td data-key="start" data-value="2024-11-15">Nov 15, 2024</td>
+                  </tr>
+                  <tr>
+                    <td data-key="name">Brand Awareness</td>
+                    <td data-key="status"><span class="badge badge--blue">Completed</span></td>
+                    <td data-key="budget" class="right" data-value="30000">$30,000</td>
+                    <td data-key="spent" class="right" data-value="30000">$30,000</td>
+                    <td data-key="progress" class="right" data-value="100">100%</td>
+                    <td data-key="start" data-value="2024-07-10">Jul 10, 2024</td>
+                  </tr>
+                  <tr>
+                    <td data-key="name">Summer Sale</td>
+                    <td data-key="status"><span class="badge badge--green">Active</span></td>
+                    <td data-key="budget" class="right" data-value="65000">$65,000</td>
+                    <td data-key="spent" class="right" data-value="22900">$22,900</td>
+                    <td data-key="progress" class="right" data-value="35">35%</td>
+                    <td data-key="start" data-value="2025-06-01">Jun 1, 2025</td>
+                  </tr>
+                  <tr>
+                    <td data-key="name">Q1 Lead Gen</td>
+                    <td data-key="status"><span class="badge badge--green">Active</span></td>
+                    <td data-key="budget" class="right" data-value="40000">$40,000</td>
+                    <td data-key="spent" class="right" data-value="11250">$11,250</td>
+                    <td data-key="progress" class="right" data-value="22">22%</td>
+                    <td data-key="start" data-value="2025-01-05">Jan 5, 2025</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Activity Log -->
+          <section class="section two-col">
+            <div>
+              <h2 class="section__title">Activity Log</h2>
+              <ul class="activity-list" aria-live="polite">
+                <li class="activity-item">
+                  <span class="activity-item__time">Today, 14:12</span>
+                  <span class="activity-item__text">Budget for Summer Sale increased to $65,000.</span>
+                </li>
+                <li class="activity-item">
+                  <span class="activity-item__time">Yesterday, 18:40</span>
+                  <span class="activity-item__text">Spring Launch: Updated ad creatives (Set B).</span>
+                </li>
+                <li class="activity-item">
+                  <span class="activity-item__time">Mon, 09:15</span>
+                  <span class="activity-item__text">Holiday Promo paused for performance review.</span>
+                </li>
+                <li class="activity-item">
+                  <span class="activity-item__time">Sun, 16:03</span>
+                  <span class="activity-item__text">Generated weekly performance report.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Notifications -->
+            <div>
+              <h2 class="section__title">Notifications</h2>
+              <div id="notifications" class="notifications">
+                <div class="alert alert--info">
+                  <div class="alert__content">
+                    <strong>Heads up:</strong> Q1 Lead Gen CTR is trending down.
+                  </div>
+                  <button class="btn btn--ghost alert__close" aria-label="Dismiss notification">✕</button>
+                </div>
+                <div class="alert alert--warning">
+                  <div class="alert__content">
+                    <strong>Budget nearing limit:</strong> Holiday Promo has spent 70%.
+                  </div>
+                  <button class="btn btn--ghost alert__close" aria-label="Dismiss notification">✕</button>
+                </div>
+                <div class="alert alert--success">
+                  <div class="alert__content">
+                    <strong>Milestone:</strong> Brand Awareness reached 100% goal.
+                  </div>
+                  <button class="btn btn--ghost alert__close" aria-label="Dismiss notification">✕</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
