@@ -1,6 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" >
+    <!--boxicons link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="images/logo-portfolio.png" alt="logo"></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <nav>
+        <ul class="navlist">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-page">About Me</a></li>
+          <li><a href="#my-projects">Projects</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </nav>
+      <div>
+          <a href="#" class="btn">Resume</a>
+        </div>
+</header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1><span>Hi, I'm Candy Khumalo</span></h1>
+      <h2>Front-End Developer</h2>
+      <p>I craft responsive and accessible web experiences using modern technologies like HTML, CSS, and JavaScript — creating clean, beautiful, and functional interfaces.</p>
+      <a href="#" class="btn">View My Work</a>
+      <a href="#" class="btn btn2">Get In Touch</a>
+      <div class="icon">
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+      </div>
+    </div>
+    <div class="hero-imgg">
+      <img src="images/siyabonga-photo1.jpg" alt="Candy Khumalo">
+    </div>
+  </section>
+
+  <section class="about-page" id="about-page">
+    <h1 class="about-text">About Me</h1>
+    <p>I'm a passionate front-end developer focused on crafting engaging and accessible digital experiences. My journey began with a deep curiosity for building the web, and I've been creating with purpose ever since.</p>
+   
+   <div class="about-section">
+     <div class="my-story">
+       <h2>My Story</h2>
+       <p>I'm a front-end developer with a passion for crafting clean, intuitive digital experiences. My journey started with HTML and CSS, where I discovered the joy of bringing designs to life. Since then, I've embraced JavaScript to add interactivity and depth to my work.</p>
+       <p>I take pride in writing well-structured code, building responsive layouts, and collaborating on real-world projects using Git and GitHub. With a strong foundation in UI/UX and hands-on experience in Figma, I design with the user in mind—always aiming for clarity, accessibility, and impact.</p>
+       <p>Beyond coding, I thrive on bringing visions to life through seamless design and purposeful interaction. From perfecting mobile responsiveness to championing accessibility, I sweat the small stuff that sets exceptional websites apart. Growth is my fuel—learning new tools, leveling up with every project, and crafting experiences that leave a lasting impression.</p>
+     </div>
+   
+     <div class="my-skills">
+       <h2>My Skills</h2>
+   
+       <div class="skill">
+         <span>HTML</span>
+         <div class="bar">
+           <div class="fill" style="width: 85%;">85%</div>
+         </div>
+       </div>
+   
+       <div class="skill">
+         <span>CSS</span>
+         <div class="bar">
+           <div class="fill" style="width: 75%;">75%</div>
+         </div>
+       </div>
+   
+       <div class="skill">
+         <span>JavaScript</span>
+         <div class="bar">
+           <div class="fill" style="width: 50%;">50% (for now)</div>
+         </div>
+       </div>
+   
+       <div class="skill">
+         <span>Git / GitHub</span>
+         <div class="bar">
+           <div class="fill" style="width: 61%;">61%</div>
+         </div>
+       </div>
+
+       <div class="skill">
+        <span>Figma</span>
+        <div class="bar">
+          <div class="fill" style="width: 70%;">70%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span>Problem Solving</span>
+        <div class="bar">
+          <div class="fill" style="width: 68%;">68%</div>
+        </div>
+      </div>
+     </div>
+   </div>
+
+   <div class="what-i-do">
+    <h2 class="section-title">What I Do</h2>
+    <div class="services">
+      <div class="service-box">
+        <i class="bx bx-code-alt"></i>
+        <h3>Web Development</h3>
+        <p>Building modern, responsive websites with clean code and best practices.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="bx bx-paint"></i>
+        <h3>UI/UX Designer</h3>
+        <p>Creating intuitive user interfaces with a focus on accessibility and usability.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="bx bx-devices"></i>
+        <h3>Responsive Design</h3>
+        <p>Ensuring websites work flawlessly across all devices and screen sizes.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="bx bx-joystick"></i>
+        <h3>Interactive Experiences</h3>
+        <p>Adding animations and interactive elements to enhance user engagement.</p>
+      </div>
+    </div>
+   </div>
+  </section>
+
+   <section class="projects" id="my-projects">
+    <h2 class="section-title">My Projects</h2>
+    <p style="color: #222;">Here are some of my recent projects that showcase my skills and experience in front-end development.</p>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="images/portfolio.png" alt="Portfolio website">
+        <h3>Portfolio Website</h3>
+        <p>A personal website showcasing my skills. Built with HTML and CSS. Fully responsive layout.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="images/landing-page.png" alt="Landing Page">
+        <h3>Landing Page</h3>
+        <p>This is the homepage for *my brand*, Art Attack. It introduces our vision with bold, creative design.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="images/log-in.png" alt="log in webpage">
+        <h3>Log In Page</h3>
+        <p>A basic user Log-In page with HTML form elements and stylish CSS for clean user experience.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="images/car-wash.png" alt="car wash webpage">
+        <h3>Car wash Landing Page</h3>
+        <p>A clean website design for SuliTransi, a township-based car wash business.</p>
+      </div>
+
+    </div>
+   </section>
+
+  <!--js file link-->
+  <script src="script.js"></script>
+  
+</body>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Campaign Dashboard</title>
