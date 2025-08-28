@@ -160,16 +160,15 @@ section{
   display: grid;
   grid-template-columns: 1fr 1fr; 
   align-items: center;
-  gap: 6rem;
+  gap: 8rem;
   margin-top: 120px;
   flex-direction: column; 
   background-color: #bffaff;
   box-shadow: #00c7fb;
-  border-bottom: 3px solid #00c7fb;
 } 
 
 .hero-text h1 {
-  font-size: 95px;
+  font-size: 90px;
   line-height: 1.1;
   margin: 0 0 30px;
   font-family: 'Work Sans' , sans-serif;
@@ -177,9 +176,9 @@ section{
 }
 
 .hero-text p {
-  color:  #333;
-  font-size: 16px;
-  line-height: 30px;
+  color:  #00274c;
+  font-size: 18px;
+  line-height: 24px;
   margin-bottom: 40px;
   max-width: 800px;
 }
@@ -190,9 +189,9 @@ section{
   font-size: 15px;
   font-weight: 600;
   color: white;
-  background: #00c7fb;
+  background: #00a8d4;
   border-radius: 50px;
-  border: 2px solid  #800020;
+  border: 2px solid  #00a8d4;
   box-shadow: 0 4px 15px rgba(255, 0, 102, 0);
  /* transition: box-shadow  0.3s ease, transform 0.3s ease;  */
 }
@@ -206,13 +205,13 @@ a:focus,
  /* box-shadow: 0 10px 20px rgba(0, 0, 0); */
   transform: translateY(-3px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-  color: #800020;
-  background-color: #00c7fb;
+  color: #fff;
+  background-color: #00a8d4;
 }
 
 .btn2 {
-  border: 2px solid  #800020;
-  color:   #800020;
+  border: 2px solid  #00a8d4;
+  color:   #00a8d4;
   background: transparent;
   margin-left: 15px;
   transition: all .50s ease;
@@ -220,7 +219,7 @@ a:focus,
 }
 
 .btn2:hover {
-  background: #00c7fb; 
+  background: #00a8d4; 
   color: #fff;
 }
 
@@ -229,7 +228,7 @@ a:focus,
    width: 100%;
    border-radius: 50%;
    object-fit: cover;
-   border: 4px solid #00c7fb;
+   border: 4px solid #00a8d4;
    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
    margin-left: auto; 
    margin-right: auto;
@@ -238,11 +237,13 @@ a:focus,
 }
 
 span {
-  color: #800020;
+  color: #457f8c;
 }
 
 h2{
   color:  #457f8c;
+  margin-bottom: 10px;
+  font-size: 27px;
 }
 
 
@@ -259,7 +260,7 @@ h2{
 .icon i{
   margin: 0 10px;
   font-size: 24px;
-  color: #00c7fb;
+  color: #457f8c;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -396,13 +397,13 @@ h2{
 .about-text {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #800020;
+  color:  #457f8c;
 }
 
 .about-page p {
   max-width: 600px;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 18px;
   color: #457f8c;
 }
 
@@ -427,7 +428,7 @@ h2{
 .my-story h2, .my-skills h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #800020;
+  color:  #457f8c;
 }
 
 .my-story p {
@@ -504,15 +505,15 @@ h2{
 
 .what-i-do {
   padding: 4rem 2rem;
-  background-color: #00c7fb;
+  background-color: #457f8c;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 18px;
 }
 
 .services {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 4rem;
   max-width: 1100px;
   margin: auto;
   padding: 1rem;
@@ -555,7 +556,7 @@ h2{
 .service-box h3{
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #800020;
+  color:  #457f8c;
 }
 
 .service-box p{
@@ -585,8 +586,8 @@ h2{
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 2rem;
-  color: #800020;
+  margin-bottom: 1rem;
+  color: #457f8c;
 }
 
 .projects-container {
@@ -624,7 +625,7 @@ h2{
 .project-card h3 {
   padding: 15px;
   font-size: 20px;
-  color: #800020;
+  color:  #457f8c;
 }
 
 .get-in-touch {
@@ -643,7 +644,7 @@ h2{
 
 .get-in-touch h2 {
   margin-bottom: 1.5rem; 
-  color: #bffaff;
+  color:  #457f8c;
   /* Set a responsive font size */
   font-size: 2rem; /* A good base size */
   line-height: 1.2;
@@ -845,14 +846,15 @@ h2{
 .contact-page p{
   justify-content: center;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .contact-section {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 4rem;
   padding: 4rem 10%;
 
 }
@@ -862,7 +864,7 @@ h2{
   min-width: 500px;
   background-color:  #fff;
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .my-contact i{
