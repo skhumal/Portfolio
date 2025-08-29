@@ -134,8 +134,8 @@ html {
 }
 
 .btn:hover{
-  border: 2px solid  #00274c;
-  color:  #00274c;
+  border: 2px solid  #bffaff;
+  color:  #bffaff;
   background: transparent;
 }
 
@@ -163,7 +163,7 @@ section{
   gap: 8rem;
   margin-top: 120px;
   flex-direction: column; 
-  background-color: #bffaff;
+  background-color: #a0e0e5;
   box-shadow: #00c7fb;
 } 
 
@@ -176,7 +176,7 @@ section{
 }
 
 .hero-text p {
-  color:  #00274c;
+  color: #336f82 ;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 40px;
@@ -196,11 +196,7 @@ section{
  /* transition: box-shadow  0.3s ease, transform 0.3s ease;  */
 }
 
-a:focus, 
-.btn:focus {
-  outline: 2px dashed #00274c;
-  outline-offset: 4px;
-}
+
 .btn:hover{
  /* box-shadow: 0 10px 20px rgba(0, 0, 0); */
   transform: translateY(-3px);
@@ -237,7 +233,7 @@ a:focus,
 }
 
 span {
-  color: #457f8c;
+  color: #2c5d6b;
 }
 
 h2{
@@ -260,7 +256,7 @@ h2{
 .icon i{
   margin: 0 10px;
   font-size: 24px;
-  color: #457f8c;
+  color: #333;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -411,7 +407,7 @@ h2{
 .about-section {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 6rem;
   padding: 4rem 10%;
 
 }
@@ -419,7 +415,7 @@ h2{
 .my-story, .my-skills {
   flex: 1;
   min-width: 300px;
-  background-color:  #bffaff;
+  background-color: #e9fdff ;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -433,7 +429,7 @@ h2{
 
 .my-story p {
   margin-bottom: 1rem;
-  color: #457f8c;
+  color: #333;
 }
 
 /* Skills */
@@ -471,18 +467,18 @@ h2{
 }
 
 .bar {
-  background-color: lightgray;
+  background-color: #b0e0e3 ;
   height: 20px;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .fill {
-  background-color: #00274c;
+  background-color: #00a8d4;
   height: 100%;
   text-align: right;
   padding-right: 10px;
-  color: #457f8c;
+  color: #e9fdff;
   font-size: 0.9rem;
   border-radius: 5px 0 0 5px;
   transition: width 1s ease-in-out;
@@ -549,7 +545,7 @@ h2{
 
 .service-box i{
   font-size: 2.5rem;
-  color:#00c7fb;
+  color: #00a8d4;
   margin-bottom: 1rem;
 }
 
@@ -561,7 +557,7 @@ h2{
 
 .service-box p{
   font-size: 1rem;
-  color: #457f8c;
+  color: #333;
 }
 
 .projects {
@@ -575,7 +571,7 @@ h2{
   margin: 0 auto 20px auto;
   font-size: 18px;
   padding-bottom: 25px;
-  color:#457f8c;
+  color:#333;
   /*text-align: center;
   max-width: 500px;
   margin-bottom: 40px;
@@ -603,7 +599,7 @@ h2{
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-  background-color: #bffaff;
+  background-color: #e6f4f1;
   padding: 2px;
 }
 
@@ -644,7 +640,7 @@ h2{
 
 .get-in-touch h2 {
   margin-bottom: 1.5rem; 
-  color:  #457f8c;
+  color:  #bffaff;
   /* Set a responsive font size */
   font-size: 2rem; /* A good base size */
   line-height: 1.2;
@@ -729,7 +725,7 @@ h2{
   color: #ffffff;
   padding: 40px 20px 20px;
   font-family: 'Segoe UI', sans-serif;
-  margin-top: 25px;
+  margin-top: 125px;
 }
 
 .footer-container {
@@ -832,37 +828,45 @@ h2{
 
 .contact-page h1{
   display: flex;
-  padding-top: 215px;
+  padding-top: 180px;
   justify-content: center;
   font-weight: 700;
   font-size: 50px;
+  color: #00c7fb;
 }
 
 .contact-page span{
   padding-left: 12px;
-  color:#457f8c;
+  color: #457f8c;
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column; /* stack vertically */
+    align-items: center;   /* center each item */
+    
+  }
 }
 
 .contact-page p{
   justify-content: center;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: #336f82;
 }
 
 .contact-section {
   display: flex;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 10rem;
   padding: 4rem 10%;
-
 }
 
 .my-contact {
   flex: 1;
   min-width: 500px;
-  background-color:  #fff;
   padding: 2rem;
   border-radius: 10px;
 }
@@ -874,25 +878,23 @@ h2{
 
 .my-contact p{
   text-align: left;
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.my-contact h2{
+  font-size: 35px;
 }
 
 .my-contact h4{
   margin-top: 15px;
+  color: #457f8c;
 }
 
-.email p{
-  font-size: 17px;
+.email p, .phone p, .location p {
   margin-left: 25px;
-}
-
-.phone p{
-  font-size: 17px;
-  margin-left: 25px;
-}
-
-.location p{
-  font-size: 17px;
-  margin-left: 25px;
+  color: #336f82;
 }
 
 .form{
@@ -900,7 +902,8 @@ h2{
   min-width: 500px;
   background-color:  #bffaff;
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: 20px;
+  border: 1px solid #457f8c;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -923,9 +926,9 @@ h2{
 }
 
 .form p{
-  padding-top: 15px;
+  padding-top: 10px;
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .form label{
@@ -961,7 +964,7 @@ h2{
   width: 100%;
   padding: 12px;
   border: none;
-  background: #00c7fb;
+  background: #457f8c;
   color: #fff;
   font-size: 16px;
   border-radius: 8px;
@@ -974,23 +977,24 @@ h2{
 }
 
 .contact-card{
-  background: #457f8c;
+  background: #00c7fb;
   margin-top: 20px;
   border-radius: 20px;
   height: 120px;
+  width: 500px;
 }
 
 .contact-info h4{
   padding-top: 15px;
   padding-left: 15px;
   font-size: 17px;
-  color:#fff;
+  color:#f0f8ff;
 }
 
 .contact-info p{
-  font-size: 17px;
+  font-size: 15px;
   text-align: left;
   padding: 15px;
   align-items: center;
-  color:#fff;
+  color: #f0f8ff;
 }
