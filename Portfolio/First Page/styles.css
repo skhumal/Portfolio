@@ -411,7 +411,13 @@ h2{
   padding: 4rem 10%;
 
 }
-
+.story-img{
+  display: block;
+  margin: 20px auto;   /* centers image */
+  width: 300px;        /* adjust size */
+  border-radius: 15px; /* smooth corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 .my-story, .my-skills {
   flex: 1;
   min-width: 300px;
@@ -429,7 +435,7 @@ h2{
 
 .my-story p {
   margin-bottom: 1rem;
-  color: #333;
+  color: #555;
 }
 
 /* Skills */
@@ -571,7 +577,7 @@ h2{
   margin: 0 auto 20px auto;
   font-size: 18px;
   padding-bottom: 25px;
-  color:#333;
+  color:#555;
   /*text-align: center;
   max-width: 500px;
   margin-bottom: 40px;
@@ -853,7 +859,6 @@ h2{
   font-weight: 400;
   font-size: 18px;
   text-align: center;
-  margin-bottom: 30px;
   color: #336f82;
 }
 
@@ -872,47 +877,65 @@ h2{
 }
 
 .my-contact i{
-  font-size: 20px;
+  font-size: 22px;
   align-items: center;
+  margin-right: 10px;
 }
 
 .my-contact p{
   text-align: left;
   font-size: 16px;
-  margin-bottom: 12px;
-  color: #333;
+  color: #336f82;
 }
 
 .my-contact h2{
   font-size: 35px;
 }
 
-.my-contact h4{
-  margin-top: 15px;
+.my-contact .text h4{
+  margin-top: 0;
   color: #457f8c;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.email p, .phone p, .location p {
-  margin-left: 25px;
+.text p{
+  margin: 4px 0 0;
+  font-size: 14px;
   color: #336f82;
+}
+
+.email , .phone , .location  {
+  display: flex;
+  align-items: center;
+  color:  #457f8c;
+  margin-bottom: 20px;
+}
+
+.text{
+  margin-left: 25px;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .form{
   flex: 1;
   min-width: 500px;
-  background-color:  #bffaff;
+  background-color: #e9fdff;
   padding: 2rem;
   border-radius: 20px;
   border: 1px solid #457f8c;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .contact-intro{
   margin-top: 15px;
+  color: #457f8c;
 }
 
 .my-intro{
-  margin-top: 12px;
+  margin-top: 14px;
+  margin-bottom: 15px;
 }
 
 /* Flex row for Name and Email */
@@ -926,7 +949,7 @@ h2{
 }
 
 .form p{
-  padding-top: 10px;
+  padding-bottom: 25px;
   text-align: left;
   font-size: 14px;
 }
@@ -935,7 +958,7 @@ h2{
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
-  color: #444;
+  color: #457f8c;
 }
 
 .form input,
@@ -978,7 +1001,7 @@ h2{
 
 .contact-card{
   background: #00c7fb;
-  margin-top: 20px;
+  margin-top: 50px;
   border-radius: 20px;
   height: 120px;
   width: 500px;
@@ -988,7 +1011,7 @@ h2{
   padding-top: 15px;
   padding-left: 15px;
   font-size: 17px;
-  color:#f0f8ff;
+  color:#fff;
 }
 
 .contact-info p{
@@ -996,5 +1019,5 @@ h2{
   text-align: left;
   padding: 15px;
   align-items: center;
-  color: #f0f8ff;
+  color: #fff;
 }
