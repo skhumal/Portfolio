@@ -1,22 +1,23 @@
-let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('.navlist');
 
-menu.onclick = () => {
+// Select the menu icon and navigation list
+const menu = document.querySelector('#menu-icon');
+const navlist = document.querySelector('.navlist');
+
+// Open and close the mobile navigation
+menu.addEventListener('click', () => {
   menu.classList.toggle('bx-x');
-  nav.classList.toggle('active');
-}
+  navlist.classList.toggle('active');
 
-let menu = document.querySelector('#menu-icon');
-let nav = document.querySelector('nav');
+  const isOpen = navlist.classList.contains('active');
+  menu.setAttribute('aria-expanded', isOpen);
+});
 
-menu.onclick = () => {
-  nav.classList.toggle('active');
-} 
+// Close the mobile navigation after selecting a link
+const navLinks = document.querySelectorAll('.navlist a');
 
- /*  let menu = document.querySelector('#menu-icon');
-let nav = document.querySelector('.nav');
-
-menu.onclick = () => {
-  menu.classList.toggle('bx-x');
-  nav.classList.toggle('active');
-} */
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('bx-x');
+    navlist.classList.remove('active');
+  });
+});
